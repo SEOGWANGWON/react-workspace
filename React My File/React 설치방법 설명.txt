@@ -1,0 +1,81 @@
+https://nodejs.org/en/download/current
+
+LTS 
+
+Windows install
+
+생성한 react-worksapce 폴더경로로 cmd를 킨후
+
+npm cache clean --force
+
+npm chache verify
+
+npx create-react-app <my-app> 내가 쓰고자하는 이름
+
+y 누르라고 하면 누르고
+
+
+
+npm start ( my-app ) 까지 들어가서 실행 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+package-lock - react 페이지 상세 기재 ( pom.xml ) 과 같음
+
+node_modules = lombok.jar 와 같은 역할
+
+
+
+
+
+
+
+
+1. react-workspace
+	react 폴더 설치
+	App.js 문구에다가 안녕하세요. 리액트
+
+C:\Users\user1\frontend-react-workspace
+	my-app 
+	myapp 만들어보기
+
+
+
+React 폴더 규칙
+
+public -> 건들지 않기 ( 기본세팅 ) 
+src -> js css img 를 src 안에서 작성
+
+
+
+myapp
+
+
+IndexExample
+reportWebVitals
+ToggleButton
+
+3개의 js 만들어보기
+
+
+
+
+
+
