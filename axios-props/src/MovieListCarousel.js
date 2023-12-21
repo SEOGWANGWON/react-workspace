@@ -1,5 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import MovieCard from './MovieCard';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Carousel from 'react-bootstrap/Carousel';
 //부모
 import axios from 'axios';
 
@@ -31,11 +33,14 @@ const MovieList = () => {
     }, []);
 
     return (
-        <div>
+        <div className='text-center'>
+            <Carousel>
             {movies.map(movie => (
-                <MovieCard key={movie.id} movie={movie} />
+                <Carousel.Item key={movie.id}>
+                <MovieCard movie={movie} />
+                </Carousel.Item>
             ))}
-
+            </Carousel>
         </div>
     )
 }

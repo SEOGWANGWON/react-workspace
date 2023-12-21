@@ -3,10 +3,11 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import MovieList from './MovieList';
+import MovieListCarousel from './MovieListCarousel';
 import DogInfo from './DogInfo';
-import TestAPI from './TestAPI';
+import TestAPI from './UserExam';
 import PostAPI from "./PostAPI";
+import PostComment from "./PostComment";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -14,8 +15,10 @@ root.render(
     {/* <App /> */}
     {/* <MovieList/> */}
     {/* <MovieList/> */}
-    <TestAPI/>
+    {/* <TestAPI/> */}
     {/* <PostAPI/> */}
+    {/* <PostComment/> */}
+    <MovieListCarousel/>
   </React.StrictMode>
 );
 
