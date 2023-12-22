@@ -25,7 +25,11 @@ const PostComment = () => {
     }, []);
 
     return(
+        
         <div>
+            <div>
+            
+            </div>
         <h2>User 정보</h2>
         {userData.map(user => (
             <p key={user.id}>{user.name}</p>

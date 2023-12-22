@@ -26,8 +26,12 @@ const DataExam = () => {
         <>
             {data ? (
                 <ul>
-            {data.map(item => ( <li key={item.id}>{item.title}</li>))}
-            </ul> )
+                    {data.map(item => (
+                         <li key={item.id}>
+                            {item.title}
+                            </li>
+                            ))}
+              </ul> )
              : (<p>데이터가 없습니다.</p>)}
         </>
     )
