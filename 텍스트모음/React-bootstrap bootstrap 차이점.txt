@@ -1,0 +1,24 @@
+react-bootstrap 과 bootstrap 차이점
+
+ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
+react-bootstrap = <Button> 과 같이 대문자로 시작
+
+import { Modal, Button } from 'react-bootstrap';
+    -> 부트스트랩 스타일을 아예 함수(컴포넌트)로 만들어서 
+        제공해주는 것
+
+React-Bootstrap은 리액트에서 css 작업을 원활하게 도와주는 라이브러리이다.
+
+React-Bootstrap 없이 css 작업을 한다하면 디자인적으로 신경쓸 부분이 많은데, 이것을 통해 간단하게
+
+이쁜 html을 구현해볼 수 있다.
+
+
+
+
+bootstrap 
+
+import 'bootstrap/dist/css/bootstrap.min.css';
+    -> className 에 bottstrap이 지정한 형식이 들어감  
+        className = "mt-5"
+        css 형식

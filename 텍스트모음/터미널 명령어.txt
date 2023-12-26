@@ -1,0 +1,63 @@
+
+
+리액트 폴더 생성
+
+npx create-react-app <폴더명>
+
+완전 삭제 ( 휴지통에도 안감 매우매우조심 제발조심 )
+rm -r .\react-boot
+
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+// Router 라우터 임포트 
+npm i react-router-dom  // Rounter 설치 
+
+
+npm i bootstrap  // 부트 스트랩 설치
+npm install react-bootstrap bootstrap 
+
+ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
+설치 npm install react-bootstrap 
+설치 npm install bootstrap
+를 한 번에 두개 설치 하는것이고
+밑에는 하나만 설치입니다 ㅎㅎ
+
+ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
+
+import 'bootstrap/dist/css/bootstrap.min.css';	// 부트 스트렙 임포트 주소
+import Carousel from 'react-bootstrap/Carousel';
+
+
+axios
+javascript나 react에서 http 요청을 수행하기 위한 라이브러리
+
+주로 웹서버와 통신, API 호출, 데이터 가져오기 작업에 사용
+
+사용법
+npm install axios
+
+yarn install axios
+
+
+ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ2023-12-26 현재진행
+
+mkdir node-react-todoList
+
+node : 설치하는녀석
+
+front-end : client 로 많이 표기함
+back-end : server 로 많이 표기함
+
+
+
+server 에 
+ls 
+
+C:\Users\user1\react-workspace\node-react-todoList\server
+npm init 친후 엔터 여러번 입력
+npm i oracledb express 또는 npm install express oracledb ( oracledb 와 express 두개 설치)
+
+ls : 
+
+npm i oracledb express : 
+
+npm i cors

@@ -1,0 +1,16 @@
+깃에 올릴 때
+
+.ignore
+	nodejs reactjs
+	node_modules 폴더 제외하고 깃에 올려야함 
+		 이유 : 
+	package-lock.json 도 제외하고 올려야함
+			단 package.json 은 절대 삭제하지 말것
+
+	
+
+	나중에 git clone 해서 파일을 다운받고 실행할 때
+	npm start를 하기 전에 npm i 를 실행할 것
+	npm i --> 이 명령어 하나면 알아서 설치가 됨  
+	node_modules
+	package-lock.json
