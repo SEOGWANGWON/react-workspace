@@ -1,4 +1,16 @@
+====================================================
+cmd 창 ( window linux )
 
+directory (폴더)
+
+cd : change directory
+
+
+dir : window용 dir ( directory )
+
+ls : linux & macbook 용 (list)      // window 사용 불가 
+
+====================================================
 
 리액트 폴더 생성
 
@@ -56,7 +68,7 @@ C:\Users\user1\react-workspace\node-react-todoList\server
 npm init 친후 엔터 여러번 입력
 npm i oracledb express 또는 npm install express oracledb ( oracledb 와 express 두개 설치)
 
-ls : 
+ls : linux 용 ( window 지원 x )
 
 npm i oracledb express : 
 

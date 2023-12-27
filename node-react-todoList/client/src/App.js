@@ -5,11 +5,6 @@ function App() {
 
   const [todos, setTodos] = useState([]);
   
-  return result.rows.map((row) => ({
-    ID: row[0],
-    NAME: row[1],
-    PRICE: row[2],
-}))
 
   // npm i axios
   useEffect(() => {

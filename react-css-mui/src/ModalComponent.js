@@ -1,6 +1,8 @@
 // 모달이란
 //웹페이지에서 특정 작업을 수행하기 위해
 // 표시되는 작은 창
+//////////////////////////////////////////////// 알림창 같은 느낌의 작은 창 ( 결과 )
+
 import React, { useState } from 'react' ;
 import { Modal, Button } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -25,7 +27,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 const ModalComponent = () => {
 
     // 모달의 상태를 관리해줄 useState 훅 사용
-    const [ showModal, setShowModal ] = useState(false);
+    const [ showModal, setShowModal ] = useState(false);0
 
     // 모달을 열고 닫는 함수를 표현
     const handleShow = () => setShowModal(true);

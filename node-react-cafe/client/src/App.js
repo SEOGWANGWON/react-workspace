@@ -31,7 +31,7 @@ export default function App() {
         </thead>
       {cafes.map((cafe) => (
           <tr key={cafe.ID}>
-           
+            <td>{cafe.ID}</td>
             <td>{cafe.MENU}</td>
             <td>{cafe.PRICE}</td>
             <button onClick={() => infoCafe(cafe)}>상세보기</button>
