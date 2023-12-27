@@ -1,0 +1,22 @@
+mkdir Final-react-website
+clear - mac linux
+npx create-react-app client
+cd client
+npm i bootstrap react-bootstrap axios react-router-dom
+npm start
+
+App.js 활용해서 -> react-router-dom LInk
+
+
+
+1. 
+	테마를 변경하기 위해서는 context 사용해서 전체적인 테마 변경
+	파일 링크 탈 수 있도록 세팅 해줌 ( Router 에 포함된 Link ) 
+	각 파일에 bootstrap 활용해서 꾸며줄 수 있음
+
+	Link '/' = home
+	링크 '/blog' = Blog.js	( axios를 활용해서 get db에 임의로 작성해준 블로그 내용 갖고오기 ) 
+	링크 '/todos' = Todolist.js	( localstorage 활용해서 캐시에 todo 저장 삭제 수정 )
+	링크 '/game' = Game.js	( json 값을 만들어서 만들어놓은 json을 활용하는 game )
+	링크 '/movie' = MovieList.js	( axios 로 공개된 API를 가지고 올 수 있는 컴포넌트 ) 
+	링크 /comment = Comment.js
