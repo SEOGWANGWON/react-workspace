@@ -10,6 +10,8 @@ dir : window용 dir ( directory )
 
 ls : linux & macbook 용 (list)      // window 사용 불가 
 
+npm : (Node Package Manager)
+
 ====================================================
 
 리액트 폴더 생성

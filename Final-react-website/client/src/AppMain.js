@@ -10,7 +10,11 @@ import Footer from './Component/Footer';
 // // import TodoList from './component/TodoList';
 import Home from './Component/Home';
 import Header from './Component/Header';
-import NumberGuessingGame from './Component/NumberGuessingGame';
+import NumberGuessingGame from './Component/Game/NumberGuessingGame';
+import WeatherSearch from './Component/Weather/WeatherSearch';
+import Weather from './Component/Weather/Weather';
+import MusicPlayer from './Component/Music/MusicPlayer';
+import MusicPlayerOld from './Component/Music/MusicPlayerOld';
 
 function App() {
 
@@ -19,6 +23,9 @@ function App() {
       <div>
         <Header/>
           <div className='container mt-4'>
+            <Weather/>
+            <WeatherSearch/>
+            <MusicPlayer/>
             <Routes>
               <Route path='/' element={<Home/>}>Home</Route>
               <Route path='/numberGuessingGame' element={<NumberGuessingGame/>}>숫자 맞추기 게임 </Route>

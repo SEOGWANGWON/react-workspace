@@ -1,0 +1,56 @@
+한 프로그램에서 "Hello, World!" 를 출력 할떄 
+일어나는 모든 과정을 알고싶다면 소프트웨어 개발자 쪽으로 공부를 해야함
+
+https://velog.io/@eddy_song/system-programming-study
+
+
+
+
+
+
+
+
+README.md 작성
+
+final-react-website 폴더만 따로 복사해서 github 새로운 리포지토리 를 판후 
+
+client 폴더 밑
+node_modules 삭제
+
+server 폴더 밑
+node_modules 삭제
+
+README.md 정성스레 작성후 git push origin master
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+TodoList를 작성해봅시다 
