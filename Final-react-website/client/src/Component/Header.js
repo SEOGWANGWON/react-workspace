@@ -21,6 +21,7 @@ export default function Header () {
             </Navbar.Brand>
             <Navbar.Toggle aria-controls='basic-navbar-nav' />
             <Navbar.Collapse> 
+            <Nav className="me-auto">
                 <Nav.Link as={Link} to='/' >
                     Home
                 </Nav.Link>
@@ -34,10 +35,14 @@ export default function Header () {
                     <NavDropdown.Item as={Link} to='/numberGuessingGame'>
                         Number Guessing Game
                     </NavDropdown.Item>
-                    <NavDropdown.Item as={Link} to='/quiz'>
+                    <NavDropdown.Item as={Link} to='/quizGame'>
                         Quiz
                     </NavDropdown.Item>
+                    <NavDropdown.Item as={Link} to='/fastClick'>
+                        FastClickGame
+                    </NavDropdown.Item>
                 </NavDropdown>
+                </Nav>
             </Navbar.Collapse>
         </Container>
     </Navbar>

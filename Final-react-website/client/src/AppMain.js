@@ -15,20 +15,28 @@ import WeatherSearch from './Component/Weather/WeatherSearch';
 import Weather from './Component/Weather/Weather';
 import MusicPlayer from './Component/Music/MusicPlayer';
 import MusicPlayerOld from './Component/Music/MusicPlayerOld';
+import QuizGame from './Component/Game/QuizGame';
+import FastClick from './Component/Game/FastClick';
+
+
+
+
+
+
 
 function App() {
-
   return (
     <Router>
       <div>
         <Header/>
           <div className='container mt-4'>
-            <Weather/>
-            <WeatherSearch/>
+
             <MusicPlayer/>
             <Routes>
               <Route path='/' element={<Home/>}>Home</Route>
               <Route path='/numberGuessingGame' element={<NumberGuessingGame/>}>숫자 맞추기 게임 </Route>
+              <Route path='/fastClick' element={<FastClick/>}></Route>
+              <Route path='/quizGame' element={<QuizGame/>}>개발 퀴즈 게임 </Route>
             </Routes>
           </div>
         <Footer/>

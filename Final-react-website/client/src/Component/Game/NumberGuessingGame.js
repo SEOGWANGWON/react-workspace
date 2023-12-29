@@ -1,4 +1,6 @@
 import React, {useState, useEffect} from 'react';
+import 'bootstrap';
+import { ProgressBar } from 'react-bootstrap';
 
 const NumberGuessingGameLimit = () => {
     const randomNumber = () => {
@@ -17,6 +19,8 @@ const NumberGuessingGameLimit = () => {
     // 작성한 숫자 기록
     const [guessHistory, setGuessHistory] = useState([]);
 
+    const [progress, setProgress] = useState(0);
+
 
 
     // 숫자값이 들어올 때마다 값 변경
@@ -27,6 +31,13 @@ const NumberGuessingGameLimit = () => {
 
     // useEffect 를 활용해서 게임 횟수 제한을 둘 예정
     useEffect(() => {
+        // 5번의 기회가 있기 때문에 5를 넣어줌
+        // 숫자를 넣을수록 기회가 감소하기 때문에 -attempts 넣어줌
+        // 만약에 100에서 감소하게 만들고 싶다면 (attempts / 5) * 100;
+
+        const newProgress = ((5 - attempts) /5) * 100;
+        setProgress(newProgress);
+        
         // 만약에 횟수가 끝났다면
         if (attempts === 0){
             setMessage(`GameOver!! 정답은 ${targetNumber} 입니다. 낄낄`)
@@ -38,8 +49,9 @@ const NumberGuessingGameLimit = () => {
 
             // 사용자가 작성한 기록은 모두 지워줌
             setGuessHistory([]);
-        }
-    }, [attempts, targetNumber]);
+            
+            setProgress(0);
+    }}, [attempts, targetNumber]);
     
 
 
@@ -72,17 +84,19 @@ const NumberGuessingGameLimit = () => {
                 setTargetNumber(randomNumber());
                 setAttempts(5);
                 setGuessHistory([]);
+                setProgress(0);
             } else {
 
                 // 숫자가 틀렸을 때 횟수를 차감하는 함수를 작성
                 const remaingAttempts = attempts -1;
                 setAttempts(remaingAttempts);
                 
-                if(remaingAttempts ===0){
+                if(remaingAttempts === 0){
                     setMessage(`게임 오버! 정답은 ${targetNumber} 입니다.`);
                     setTargetNumber();
                     setAttempts(5);
                     setGuessHistory([]);
+                    setProgress(0);
                 } else {
                     setMessage(guess < targetNumber ? '숫자가 정답보다 낮습니다.' : '숫자가 정답보다 높습니다.')
                 }
@@ -116,6 +130,7 @@ const NumberGuessingGameLimit = () => {
                 />
                 <button className="btn" type='submit'>제출하기</button>
             </form>
+            <ProgressBar new={progress} label={`${progress}%`} />
             <div className="card">
                 <p className='card-text'>남은 기회 : {attempts}</p>
                 <p className='card-text'>입력한 숫자 : {guessHistory.join(",")}</p>

@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
+import { ProgressBar } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-export const Quiz = () => {
+
+export const QuizGame = () => {
 
     const questions = [
         {
@@ -82,6 +84,19 @@ export const Quiz = () => {
     const [score, setScore] = useState(0);  
     const [showScore, setShowScore] = useState(false);
 
+
+    // 프로그래스바 가 100% 되는 값을 넣어주는 함수 생성
+    const progress = (currentQuestion / questions.length) * 100;
+    
+    const userProgress = (score / questions.length) * 100;
+
+    // currentQuestion : 현재 사용자가 답한 질문의 번호를 나타내는 상태
+    // questions.length : 전체 질문의 개수
+    // 예를 들어서 currentQuestion 가 1이고
+    // questions.length 7이라면
+    // progress 는 (1/7) * 100 계산돼서 약 14.29%가 됨
+    // 14.29%는 사용자가 퀴즈를 14.29% 완료했음을 보여줄 수 있음
+
     const AnswerButtonClick = (selectedOption) => {
         if (selectedOption === questions[currentQuestion].correctAnswer){
             setScore(score + 1);
@@ -114,6 +129,19 @@ export const Quiz = () => {
                     </div>
                 </div>
             ) : (
+                <div className='md-2'>
+                    <ProgressBar 
+                    variant="success"
+                    now={progress} 
+                    style={{ height: '30px', borderRadius: '10px' }}
+                    label={`전체 문제 진행률 : ${progress.toFixed(2)}%`}/>
+
+                    <ProgressBar 
+                    variant="warning"
+                    now={userProgress} 
+                    style={{ height: '30px', borderRadius: '10px' }}
+                    label={`내가 맞춘 문제 : ${userProgress.toFixed(2)}%`}/>
+                    
                 <div className='card'>
                     <div className='card-body'>
                         <h2 className='card-title'>질문 : {currentQuestion + 1}</h2>
@@ -127,7 +155,10 @@ export const Quiz = () => {
                         ))}
                     </div>
                 </div>
+                </div>
             )}
         </div>
     );
 };
+
+export default QuizGame;

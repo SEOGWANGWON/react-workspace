@@ -31,7 +31,7 @@ const MusicPlayer = () => {
     }
 
     return(
-        <div>
+        <div className='md-2'>
             <h1>음악플레이어 ♬♪ ₍₍ ◝( ◉ ‸ ◉ )◟ ⁾⁾ ♪♬ </h1> 
             <p>현재 재생중 : {state.playlist[state.currentSong]}</p>
             <button onClick={playSong} disabled={state.isPlaying}>
