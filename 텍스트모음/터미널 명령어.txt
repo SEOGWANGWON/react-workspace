@@ -1,3 +1,6 @@
+20일 전 날짜로 커밋 
+git commit --date "20 day age" -m "add product"
+
 ====================================================
 cmd 창 ( window linux )
 
